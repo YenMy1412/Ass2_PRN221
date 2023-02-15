@@ -5,8 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Assignment2_Group4_SE1610.View"
         mc:Ignorable="d"
-        Title="ShopingWindown" Height="450" Width="800">
-    <Grid>
+        Title="ShopingWindown" Height="550" Width="800" Background="AliceBlue">
+    <StackPanel>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="400"/>
+               
+                <RowDefinition Height="*"/>
+                
+                
+            </Grid.RowDefinitions>
         
-    </Grid>
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <Label Content="Genre:" Margin="10"></Label>
+                <ComboBox Width="300" Margin="10" Name="cbgenre" SelectedIndex="0" DataContext="{Binding Path=Name}"></ComboBox >
+                <Button Name="btnSearch" Margin="10" Content="Search"/>
+            </StackPanel>
+            <StackPanel Grid.Row="1">
+                <ListView>
+                    <ListView.View>
+                        <GridView>
+                           
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </StackPanel>
+
+            
+            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" >
+                <Button Name="btnPre" Content="Previous" Width="100" Height="30" Margin="15"></Button>
+                <Button Name="btnNext" Content="Next" Width="100" Margin="15" Height="30"></Button>
+
+            </StackPanel>
+
+        </Grid>
+    </StackPanel>
 </Window>

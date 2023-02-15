@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Assignment2_Group4_SE1610.Models;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,11 +19,24 @@ namespace Assignment2_Group4_SE1610.View
     /// <summary>
     /// Interaction logic for ShopingWindown.xaml
     /// </summary>
+    /// 
     public partial class ShopingWindown : Window
     {
+        MusicStoreContext context;
         public ShopingWindown()
         {
             InitializeComponent();
+            context=new MusicStoreContext();
+            loadData();
+
+        }
+        public void loadData()
+        {
+            var genre = from c in context.Genres select c.Name;
+            DataSet dataset = new DataSet();
+            cbgenre.Items.Clear();
+            cbgenre.ItemsSource = genre.ToList();
+
         }
     }
 }
