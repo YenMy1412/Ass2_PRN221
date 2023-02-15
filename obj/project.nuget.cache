@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "F2xXf4u+V1aj8PM6vL6pMSN9mO0t/xXMqvDixjzHBnpY7h11aaM0WksybJix96iTn5y2KMZXRlQw+gZsbPAXbw==",
   "success": true,
   "projectFilePath": "C:\\Users\\duan1\\source\\repos\\Ass2_PRN221\\Assignment2_Group4_SE1610.csproj",
+=======
+  "dgSpecHash": "xFsMrR+qE48NlMoYZk0hWVv3UDWU5tQBiQ2ZI8ZQIkY5T988DWOJyp/t1VQ7axH5oTruWkXmeOULp4BPBmffrw==",
+  "success": true,
+  "projectFilePath": "D:\\FULearning\\HK8\\PRN221\\Practice\\Assignment2_Group4_SE1610\\Assignment2_Group4_SE1610.csproj",
+>>>>>>> 089eeaf8ed5d5e6c65263102e6887cd70233b3f5
   "expectedPackageFiles": [
     "C:\\Users\\duan1\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\duan1\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
