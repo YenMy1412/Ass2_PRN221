@@ -8,6 +8,6 @@
     "**/platforms"
   ],
   "ConnectionStrings": {
-    "DbConnection": "server=(local); database=MyStore; uid=sa; pwd =123123; Trusted_Connection=True"
+    "DbConnection": "server=(local); database=MusicStore; uid=sa; pwd =sa; Trusted_Connection=True"
   }
 }
