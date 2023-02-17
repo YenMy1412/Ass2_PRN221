@@ -23,5 +23,10 @@ namespace Assignment2_Group4_SE1610.View
         {
             InitializeComponent();
         }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
