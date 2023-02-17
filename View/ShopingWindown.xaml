@@ -5,40 +5,76 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Assignment2_Group4_SE1610.View"
         mc:Ignorable="d"
-        Title="ShopingWindown" Height="550" Width="800" Background="AliceBlue">
-    <StackPanel>
+        Title="ShopingWindown" Height="550" Width="800" Background="AliceBlue" Loaded="Window_Loaded">
+   
+    <DockPanel>
+        
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
-                <RowDefinition Height="400"/>
-               
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="200"/>
+
                 <RowDefinition Height="*"/>
-                
-                
+
             </Grid.RowDefinitions>
-        
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
             <StackPanel Grid.Row="0" Orientation="Horizontal">
                 <Label Content="Genre:" Margin="10"></Label>
-                <ComboBox Width="300" Margin="10" Name="cbgenre" SelectedIndex="0" DataContext="{Binding Path=Name}"></ComboBox >
+                <ComboBox Width="250" Margin="10" Name="cbgenre" SelectedIndex="0" DataContext="{Binding Path=Name}"></ComboBox >
                 <Button Name="btnSearch" Margin="10" Content="Search"/>
             </StackPanel>
-            <StackPanel Grid.Row="1">
-                <ListView>
-                    <ListView.View>
-                        <GridView>
-                           
-                        </GridView>
-                    </ListView.View>
-                </ListView>
+            <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical" >
+                
+                    <Label Name="lbPrice1" Content="Price" HorizontalAlignment="Center"></Label>
+                    <Image   Height="150" Width="150" Source="C:\Users\duan1\source\repos\Ass2_PRN221\image\mi1.png" />
+                    <Button Width="100" Content="Add to Cart" ></Button>
+                
+                
+                
+                
             </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical">
+                <Label Name="lbPrice2" Content="Price" HorizontalAlignment="Center"></Label>
+                <Image Height="150" Width="150" Source="C:\Users\duan1\source\repos\Ass2_PRN221\image\mi1.png"/>
+                <Button Width="100" Content="Add to Cart" ></Button>
 
+
+
+            </StackPanel>
+            <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Vertical">
+                <Label Name="lbPrice3" Content="Price" HorizontalAlignment="Center"></Label>
+                <Image Height="150" Width="150" Source="C:\Users\duan1\source\repos\Ass2_PRN221\image\mi1.png"/>
+                <Button Width="100" Content="Add to Cart" ></Button>
+
+
+
+            </StackPanel>
+            <StackPanel Grid.Row="2" Grid.Column="2" Orientation="Vertical">
+                <Label Name="lbPrice4" Content="Price" HorizontalAlignment="Center"></Label>
+                <Image Height="150" Width="150" Source="C:\Users\duan1\source\repos\Ass2_PRN221\image\mi1.png"/>
+                <Button Width="100" Content="Add to Cart" ></Button>
+
+
+
+            </StackPanel>
             
-            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" >
+
+
+            <StackPanel Grid.Row="3" Grid.Column="0"  Orientation="Horizontal" HorizontalAlignment="Right" >
                 <Button Name="btnPre" Content="Previous" Width="100" Height="30" Margin="15"></Button>
+               
+            </StackPanel>
+            
+            <StackPanel Grid.Row="3" Grid.Column="1"  Orientation="Horizontal" HorizontalAlignment="Left" >
                 <Button Name="btnNext" Content="Next" Width="100" Margin="15" Height="30"></Button>
 
             </StackPanel>
 
         </Grid>
-    </StackPanel>
+    </DockPanel>
 </Window>

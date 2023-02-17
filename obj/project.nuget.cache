@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o8YgtNn3wHITEH7/OGHLOhGnZg/6wl23n2r9tjlFLkv2ExYN4AVYSNeEOo0Sbsnd56AtAvC3RP3vW4K4lqD5Dw==",
+  "dgSpecHash": "yf6QkGlp7/nyYW8aK2LZJSKfLGLIuNI1zq3Z5N9S2aPrGTkSCuDbk8lwsfDxlyPuwd6KRbA+9Z02YqNNC34CuA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\duan1\\Source\\Repos\\Ass2_PRN221\\Assignment2_Group4_SE1610.csproj",
+  "projectFilePath": "C:\\Users\\duan1\\source\\repos\\Ass2_PRN221\\Assignment2_Group4_SE1610.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\duan1\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\duan1\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

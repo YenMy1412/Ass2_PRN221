@@ -30,12 +30,32 @@ namespace Assignment2_Group4_SE1610.View
             loadData();
 
         }
-        public void loadData()
+       public void loadData()
         {
+            loadDataCombobox();
+          /*  String genre =  cbgenre.SelectedValue.ToString();
+            int genrid =Int32.Parse( context.Genres.FirstOrDefault(c => c.Name == genre).ToString());
+
+            var album = from c in context.Albums where c.GenreId == genrid select new { c.Price, c.Title, c.AlbumUrl };*/
+
+
+
+
+
+        }
+        public void loadDataCombobox()
+        {// load combobox
             var genre = from c in context.Genres select c.Name;
             DataSet dataset = new DataSet();
             cbgenre.Items.Clear();
             cbgenre.ItemsSource = genre.ToList();
+         //loadabum
+
+
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
 
         }
     }
