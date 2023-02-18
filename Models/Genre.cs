@@ -15,5 +15,10 @@ namespace Assignment2_Group4_SE1610.Models
         public string? Description { get; set; }
 
         public virtual ICollection<Album> Albums { get; set; }
+
+        public override string? ToString()
+        {
+            return base.ToString();
+        }
     }
 }
