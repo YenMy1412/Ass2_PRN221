@@ -1,28 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FULearning\\HK8\\PRN221\\Practice\\Assignment2_Group4_SE1610\\Assignment2_Group4_SE1610.csproj": {}
+    "C:\\Users\\ASUS\\OneDrive\\Máy tính\\PRN221 Ass2\\Ass2_PRN221\\Assignment2_Group4_SE1610.csproj": {}
   },
   "projects": {
-    "D:\\FULearning\\HK8\\PRN221\\Practice\\Assignment2_Group4_SE1610\\Assignment2_Group4_SE1610.csproj": {
+    "C:\\Users\\ASUS\\OneDrive\\Máy tính\\PRN221 Ass2\\Ass2_PRN221\\Assignment2_Group4_SE1610.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FULearning\\HK8\\PRN221\\Practice\\Assignment2_Group4_SE1610\\Assignment2_Group4_SE1610.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\PRN221 Ass2\\Ass2_PRN221\\Assignment2_Group4_SE1610.csproj",
         "projectName": "Assignment2_Group4_SE1610",
-        "projectPath": "D:\\FULearning\\HK8\\PRN221\\Practice\\Assignment2_Group4_SE1610\\Assignment2_Group4_SE1610.csproj",
-        "packagesPath": "C:\\Users\\duan1\\.nuget\\packages\\",
-        "outputPath": "D:\\FULearning\\HK8\\PRN221\\Practice\\Assignment2_Group4_SE1610\\obj\\",
+        "projectPath": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\PRN221 Ass2\\Ass2_PRN221\\Assignment2_Group4_SE1610.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\PRN221 Ass2\\Ass2_PRN221\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\duan1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows"
+          "net6.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -44,15 +44,19 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.10, )"
+              "version": "[6.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.10, )"
+              "version": "[6.0.0, )"
             },
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
@@ -65,8 +69,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -78,7 +81,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
