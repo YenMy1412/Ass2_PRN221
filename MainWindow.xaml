@@ -6,7 +6,75 @@
         xmlns:local="clr-namespace:Assignment2_Group4_SE1610"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <DockPanel VerticalAlignment="Top" Margin="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="250"/>
+                <RowDefinition Height="*"/>
 
-    </Grid>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Background="LightBlue" Orientation="Vertical">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition>
+                        </ColumnDefinition>
+                        <ColumnDefinition>
+                        </ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0" Margin="5">
+
+                        <Label Content="Genre:" FontSize="15"/>
+                        <ComboBox Name="cbGenre" Height="20" DisplayMemberPath="Name" SelectedValuePath="GenreId"
+                     Text="{Binding Path=Genre.Name, Mode=OneWay}"
+                     DataContext="{Binding ElementName=lv1, Path=SelectedItem}"/>
+
+                        <Label Content="Artist:" FontSize="15"/>
+                        <ComboBox Name="tbYear"  Height="20" 
+                     Text="{Binding Path=Year, Mode=OneWay}"
+                     DataContext="{Binding ElementName=lv1, Path=SelectedItem}"/>
+                        <Label Content="Title:" FontSize="15"/>
+                        <TextBox Name="tbTitle" Height="20"
+                     Text="{Binding Path=Title, Mode=OneWay}"
+                     DataContext="{Binding ElementName=lv1, Path=SelectedItem}"/>
+
+
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Margin="5">
+                        <Label Content="Price:" FontSize="15"/>
+                        <TextBox Name="tbPrice" Height="20"
+                                   Text="{Binding Path=Price, Mode=OneWay}"
+                     DataContext="{Binding ElementName=lv1, Path=SelectedItem}"/>
+                        <Button Margin="5" HorizontalAlignment="Left" Name="btnAlbumUrl" Width="90" Height="20" Content="AlbumUrl" Click="btnAlbumUrl_Click"/>
+                        <TextBox/>
+                    </StackPanel>
+                </Grid>
+
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button Name="btnAdd" Width="90" Height="25" Content="Add" Click="btnAdd_Click"/>
+                    <Button Name="btnEdit" Width="90" Height="25" Content="Edit" Margin="10" Click="btnEdit_Click"/>
+                    <Button Name="btnDelete" Width="90" Height="25" Content="Delete"/>
+                </StackPanel>
+
+            </StackPanel>
+
+            <ListView Grid.Row="1" Name="lv1" Margin="0,0,0,-165">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Genre" Width="50"  DisplayMemberBinding="{Binding Path=Genre.Name}"/>
+                        <GridViewColumn Header="Artist" Width="50" DisplayMemberBinding="{Binding Path=Title}"/>
+                        <GridViewColumn Header="Title" Width="300" DisplayMemberBinding="{Binding Path=Year}"/>
+                        <GridViewColumn Header="Price" Width="50" DisplayMemberBinding="{Binding Path=CountryCodeNavigation.CountryName}"/>
+                        <GridViewColumn Header="AlbumUrl" Width="100" DisplayMemberBinding="{Binding Path=Year}"/>
+                    </GridView>
+
+                </ListView.View>
+            </ListView>
+
+        </Grid>
+
+    </DockPanel>
 </Window>
+
