@@ -170,13 +170,11 @@ C:\Users\duan1\source\repos\Ass2_PRN221\bin\Debug\net6.0-windows\runtimes\win-x8
 C:\Users\duan1\source\repos\Ass2_PRN221\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\duan1\source\repos\Ass2_PRN221\obj\Debug\net6.0-windows\Assignment2_Group4_SE1610.csproj.AssemblyReference.cache
 C:\Users\duan1\source\repos\Ass2_PRN221\obj\Debug\net6.0-windows\MainWindow.g.cs
-C:\Users\duan1\source\repos\Ass2_PRN221\obj\Debug\net6.0-windows\View\CartWindow.g.cs
 C:\Users\duan1\source\repos\Ass2_PRN221\obj\Debug\net6.0-windows\View\ShopingWindown.g.cs
 C:\Users\duan1\source\repos\Ass2_PRN221\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\duan1\source\repos\Ass2_PRN221\obj\Debug\net6.0-windows\Assignment2_Group4_SE1610_MarkupCompile.cache
 C:\Users\duan1\source\repos\Ass2_PRN221\obj\Debug\net6.0-windows\Assignment2_Group4_SE1610_MarkupCompile.lref
 C:\Users\duan1\source\repos\Ass2_PRN221\obj\Debug\net6.0-windows\MainWindow.baml
-C:\Users\duan1\source\repos\Ass2_PRN221\obj\Debug\net6.0-windows\View\CartWindow.baml
 C:\Users\duan1\source\repos\Ass2_PRN221\obj\Debug\net6.0-windows\View\ShopingWindown.baml
 C:\Users\duan1\source\repos\Ass2_PRN221\obj\Debug\net6.0-windows\Assignment2_Group4_SE1610.g.resources
 C:\Users\duan1\source\repos\Ass2_PRN221\obj\Debug\net6.0-windows\Assignment2_Group4_SE1610.GeneratedMSBuildEditorConfig.editorconfig
