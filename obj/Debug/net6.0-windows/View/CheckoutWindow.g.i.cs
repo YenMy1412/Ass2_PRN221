@@ -101,7 +101,7 @@ namespace Assignment2_Group4_SE1610.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Assignment2_Group4_SE1610;V1.0.0.0;component/view/checkoutwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Assignment2_Group4_SE1610;component/view/checkoutwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\CheckoutWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
