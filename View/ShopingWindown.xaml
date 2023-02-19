@@ -5,8 +5,76 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Assignment2_Group4_SE1610.View"
         mc:Ignorable="d"
-        Title="ShopingWindown" Height="450" Width="800">
-    <Grid>
+        Title="ShopingWindown" Height="550" Width="800" Background="LightBlue" Loaded="Window_Loaded" >
+   
+    <DockPanel>
         
-    </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+               
+
+                <RowDefinition Height="80"/>
+
+            </Grid.RowDefinitions>
+            
+
+            <StackPanel Grid.Row="0" Orientation="Horizontal" >
+                <Label Content="Genre:" Margin="10"></Label>
+                <ComboBox Width="330" Margin="10" Name="cbgenre" DisplayMemberPath="Name" SelectedValuePath="GenreId"></ComboBox >
+                <Button Name="btnSearch" Margin="10" Content="Search" Click="btnSearch_Click"/>
+                 
+            </StackPanel>
+            <Grid x:Name="listview" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"></RowDefinition>
+                    <RowDefinition Height="200"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                
+                <StackPanel Grid.Row="0" Grid.Column="0"  Orientation="Vertical" >
+
+                    <Label Foreground="Red" Height="30" HorizontalAlignment="Center"></Label>
+                    <Image  Height="120" Width="120"></Image>
+                    <Button Width="100"  Content="Add to Cart" Visibility="Hidden"></Button>
+                    
+                </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Vertical" >
+
+                    <Label Foreground="Red" Height="30" HorizontalAlignment="Center"></Label>
+                    <Image   Height="120" Width="120"></Image>
+                    <Button Width="100" Content="Add to Cart" Visibility="Hidden"></Button>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical" >
+
+                    <Label Foreground="Red" Height="30" HorizontalAlignment="Center"></Label>
+                    <Image   Height="120" Width="120"></Image>
+                    <Button Width="100" Content="Add to Cart" Visibility="Hidden"></Button>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical" >
+
+                    <Label Foreground="Red" Height="30" HorizontalAlignment="Center"></Label>
+                    <Image   Height="120" Width="120"></Image>
+                    <Button Width="100" Content="Add to Cart" Visibility="Hidden"></Button>
+                </StackPanel>
+
+            </Grid>
+            
+
+
+            <StackPanel Grid.Row="2" Grid.Column="0"  Orientation="Horizontal" HorizontalAlignment="Center" >
+                <Button Name="btnPre" Content="Previous" Width="100" Height="30" Margin="15" Click="btnPre_Click" ></Button>
+                <Button Name="btnNext" Content="Next" Width="100" Margin="15" Height="30" Click="btnNext_Click"></Button>
+
+
+            </StackPanel>
+            
+            
+
+        </Grid>
+    </DockPanel>
 </Window>
