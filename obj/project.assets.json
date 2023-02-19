@@ -2343,23 +2343,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\duan1\\.nuget\\packages\\": {},
+    "C:\\Users\\Asus\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FULearning\\HK8\\PRN221\\Practice\\Assignment2_Group4_SE1610\\Assignment2_Group4_SE1610.csproj",
+      "projectUniqueName": "C:\\Users\\Asus\\Source\\Repos\\Ass2_PRN221\\Assignment2_Group4_SE1610.csproj",
       "projectName": "Assignment2_Group4_SE1610",
-      "projectPath": "D:\\FULearning\\HK8\\PRN221\\Practice\\Assignment2_Group4_SE1610\\Assignment2_Group4_SE1610.csproj",
-      "packagesPath": "C:\\Users\\duan1\\.nuget\\packages\\",
-      "outputPath": "D:\\FULearning\\HK8\\PRN221\\Practice\\Assignment2_Group4_SE1610\\obj\\",
+      "projectPath": "C:\\Users\\Asus\\Source\\Repos\\Ass2_PRN221\\Assignment2_Group4_SE1610.csproj",
+      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Asus\\Source\\Repos\\Ass2_PRN221\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\duan1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

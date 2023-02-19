@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <DockPanel Margin="0" Name="dcPanel" LastChildFill="False">
+            <Menu DockPanel.Dock="Top" x:Name="menu">
+                <MenuItem x:Name="menuShopping" Header="Shopping" Click="menuShopping_Click"></MenuItem>
+                <MenuItem x:Name="menuCart" Header="Cart" Click="menuCart_Click"></MenuItem>
+                <MenuItem x:Name="menuLogin" Header="Login" Click="menuLogin_Click"></MenuItem>
+                <MenuItem x:Name="menuAlbum" Header="Album" Click="menuAlbum_Click"></MenuItem>
+            </Menu>
+        </DockPanel>
 
+            <Image Height="370" Width="800">
+                <Image.Source>
+                    <BitmapImage  UriSource="Images/Screenshot 2023-02-15 142944.png" />
+                </Image.Source>
+            </Image>
+        
     </Grid>
 </Window>
