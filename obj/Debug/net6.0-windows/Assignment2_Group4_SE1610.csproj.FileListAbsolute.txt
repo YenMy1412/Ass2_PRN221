@@ -192,3 +192,5 @@ C:\Users\duan1\source\repos\Ass2_PRN221\obj\Debug\net6.0-windows\View\CartWindow
 C:\Users\duan1\source\repos\Ass2_PRN221\obj\Debug\net6.0-windows\View\CartWindow.baml
 C:\Users\duan1\source\repos\Ass2_PRN221\obj\Debug\net6.0-windows\View\LoginWindow.g.cs
 C:\Users\duan1\source\repos\Ass2_PRN221\obj\Debug\net6.0-windows\View\LoginWindow.baml
+C:\Users\duan1\source\repos\Ass2_PRN221\obj\Debug\net6.0-windows\View\CheckoutWindow.g.cs
+C:\Users\duan1\source\repos\Ass2_PRN221\obj\Debug\net6.0-windows\View\CheckoutWindow.baml

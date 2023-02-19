@@ -36,8 +36,8 @@ namespace Assignment2_Group4_SE1610.View
 
         private void btnCheckout_Click(object sender, RoutedEventArgs e)
         {
-            /*CheckoutWindow checkoutWindow = new CheckoutWindow();
-            checkoutWindow.ShowDialog();*/
+            CheckoutWindow checkoutWindow = new CheckoutWindow();
+            checkoutWindow.ShowDialog();
             Close();
 
         }
