@@ -6,34 +6,54 @@
         xmlns:local="clr-namespace:Assignment2_Group4_SE1610.View"
         mc:Ignorable="d"
         Title="CheckoutWindow" Height="450" Width="800" Background="LightBlue"  Loaded="Window_Loaded">
-    <Grid Margin="0,0,-144,-72">
-        <Label Content="Invoice" HorizontalAlignment="Left" Margin="378,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" RenderTransformOrigin="0.348,-1.02"/>
-        <Label Content="FirstName:" HorizontalAlignment="Left" Margin="34,19,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Margin="34,44,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="284" Height="29"/>
-
-        <Label Content="LastName:" HorizontalAlignment="Left" Margin="35,75,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Margin="34,106,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="284" Height="29"/>
-        <Label Content="Address:" HorizontalAlignment="Left" Margin="34,135,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtAddress" HorizontalAlignment="Left" Margin="35,166,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="284" Height="29"/>
-        <Label Content="City:" HorizontalAlignment="Left" Margin="34,197,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtCity" HorizontalAlignment="Left" Margin="35,228,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="284" Height="29"/>
-        <Label Content="State:" HorizontalAlignment="Left" Margin="35,259,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtState" HorizontalAlignment="Left" Margin="34,283,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="284" Height="29"/>
-        <Label Content="Country:" HorizontalAlignment="Left" Margin="35,312,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.67,2.829"/>
-        <TextBox x:Name="txtCountry" HorizontalAlignment="Left" Margin="34,343,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="284" Height="30"/>
-        <Label Content="Phone:" HorizontalAlignment="Left" Margin="465,75,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtPhone" HorizontalAlignment="Left" Margin="465,106,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="284" Height="30"/>
-
-        <Label Content="Email:" HorizontalAlignment="Left" Margin="465,141,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="465,166,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="284" Height="29"/>
-        <Label Content="Total:" HorizontalAlignment="Left" Margin="521,197,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.189,0.894" FontWeight="Bold" FontSize="14"/>
-        <TextBox x:Name="txtTotal" HorizontalAlignment="Left" Margin="521,226,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="151" Height="29"/>
-        <Label Content="Cash:" HorizontalAlignment="Left" Margin="521,253,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.189,0.894" FontWeight="Bold" FontSize="14"/>
-        <TextBox x:Name="txtCash" HorizontalAlignment="Left" Margin="521,283,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="151" Height="29"/>
-        <Label Content="Remain:" HorizontalAlignment="Left" Margin="521,312,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.189,0.894" FontWeight="Bold" FontSize="14"/>
-        <TextBox x:Name="txtRemain" HorizontalAlignment="Left" Margin="521,341,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="151" Height="29"/>
-        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="278,391,0,0" VerticalAlignment="Top" Height="31" Width="91" Click="btnSave_Click"/>
-        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="443,391,0,0" VerticalAlignment="Top" Height="31" Width="91" Click="btnCancel_Click"/>
-
+    <Grid>
+        <DockPanel VerticalAlignment="Top" >
+            <StackPanel>
+                <Label Name="lbTitle" FontWeight="Bold" FontSize="20" Content="Invoice" HorizontalAlignment="Center" Margin="30"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Vertical" Margin="10, 0, 10, 0" Grid.Column="0">
+                        <Label Name="lbFirstName" Content="First Name:"/>
+                        <TextBox Name="txtFirstName"  HorizontalAlignment="Left"  Width="385"/>
+                        <Label Name="lbLastName" Content="Last Name:"/>
+                        <TextBox Name="txtLastName"  HorizontalAlignment="Left"  Width="385"/>
+                        <Label Name="lbAddress" Content="Address:"/>
+                        <TextBox Name="txtAddress"  HorizontalAlignment="Left"  Width="385"/>
+                        <Label Name="lbCity" Content="City:"/>
+                        <TextBox Name="txtCity"  HorizontalAlignment="Left"  Width="385"/>
+                        <Label Name="lbState" Content="State:"/>
+                        <TextBox Name="txtState"  HorizontalAlignment="Left"  Width="385"/>
+                        <Label Name="lbCountry" Content="Country:"/>
+                        <TextBox Name="txtCountry"  HorizontalAlignment="Left"  Width="385"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="10, 0, 10, 0" Grid.Column="1">
+                        <Label Name="lbPhone" Content="Phone:"/>
+                        <TextBox Name="txtPhone"  HorizontalAlignment="Left"  Width="385"/>
+                        <Label Name="lbEmail" Content="Email:"/>
+                        <TextBox Name="txtEmail"  HorizontalAlignment="Left"  Width="385"/>
+                        <StackPanel HorizontalAlignment="Center">
+                            <Label  FontWeight="Bold" Name="lbTotal" Content="Total:"/>
+                            <TextBox Name="txtTotal"  Width="100"/>
+                            <Label  FontWeight="Bold" Name="lbCash" Content="Cash:"/>
+                            <TextBox Name="txtCash"  Width="100"/>
+                            <Label  FontWeight="Bold" Name="lbRemain" Content="Remain:"/>
+                            <TextBox Name="txtRemain"  Width="100"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
+                    <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="278,391,0,0" VerticalAlignment="Top" Height="31" Width="91" Click="btnSave_Click"/>
+                    <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="443,391,0,0" VerticalAlignment="Top" Height="31" Width="91" Click="btnCancel_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </DockPanel>
     </Grid>
+    
+   
 </Window>

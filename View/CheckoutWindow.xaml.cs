@@ -22,7 +22,7 @@ namespace Assignment2_Group4_SE1610.View
     public partial class CheckoutWindow : Window
     {
         MusicStoreContext context = new MusicStoreContext();
-        ShoppingCart shopping = new ShoppingCart();
+        ShoppingCart shopping = ShoppingCart.GetCart();
         public CheckoutWindow()
         {
             InitializeComponent();
@@ -32,6 +32,7 @@ namespace Assignment2_Group4_SE1610.View
         {
             try
             {
+               
                 var user = context.Users.FirstOrDefault(x => x.UserName.Equals(Settings.UserName));
                 if (user != null)
                 {
@@ -51,6 +52,7 @@ namespace Assignment2_Group4_SE1610.View
                     else
                     {
                         txtTotal.Text = shopping.GetTotal().ToString();
+                        Console.WriteLine(shopping.GetTotal().ToString());
                     }
                 }
             }
