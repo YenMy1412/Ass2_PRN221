@@ -188,3 +188,5 @@ C:\Users\duan1\source\repos\Ass2_PRN221\obj\Debug\net6.0-windows\Assignment2_Gro
 C:\Users\duan1\source\repos\Ass2_PRN221\obj\Debug\net6.0-windows\Assignment2_Group4_SE1610.genruntimeconfig.cache
 C:\Users\duan1\source\repos\Ass2_PRN221\obj\Debug\net6.0-windows\ref\Assignment2_Group4_SE1610.dll
 C:\Users\duan1\source\repos\Ass2_PRN221\bin\Debug\net6.0-windows\appsetting.json
+C:\Users\duan1\source\repos\Ass2_PRN221\obj\Debug\net6.0-windows\View\CartWindow.g.cs
+C:\Users\duan1\source\repos\Ass2_PRN221\obj\Debug\net6.0-windows\View\CartWindow.baml
