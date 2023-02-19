@@ -6,7 +6,44 @@
         xmlns:local="clr-namespace:Assignment2_Group4_SE1610.View"
         mc:Ignorable="d"
         Title="CartWindow" Height="450" Width="800">
-    <Grid>
+    <DockPanel Background="LightBlue">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="55"/>
+
+            </Grid.RowDefinitions>
+
+            <Canvas>
+                <Button Canvas.Left="45" Canvas.Top="10" Name="btnCheckout" Width="100" Height="35" Content="Check out" Click="btnCheckout_Click"/>
+            </Canvas>
+            
+            <ListView x:Name="listView" Width="700" Height="300" Grid.Row="1" >
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="AlbumId" Width="70"  DisplayMemberBinding="{Binding Path=AlbumId}"/>
+                        <GridViewColumn Header="Title" Width="200" DisplayMemberBinding="{Binding Path=Album.Title }"/>
+                        <GridViewColumn Header="Price" Width="50" DisplayMemberBinding="{Binding Path=Album.Price  }"/>
+                        <GridViewColumn Header="Count" Width="50" DisplayMemberBinding="{Binding Path=Count}"/>
+                        <GridViewColumn Header="Date created" Width="200" DisplayMemberBinding="{Binding Path=DateCreated}"/>
+                        <GridViewColumn Header="Remove from cart"  Width="120">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button x:Name="btnRemove" Content="Remove from cart" Click="btnRemove_Click"  CommandParameter="{Binding}"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <Canvas>
+                <Label Content="Total: "  Canvas.Top="360" Canvas.Left="300" FontSize="30"/>
+                <TextBox x:Name="txtTotal" Width="80" Height="30" Canvas.Top="380" Canvas.Left="380" />
+
+            </Canvas>
+
+        </Grid>
         
-    </Grid>
+    </DockPanel>
 </Window>
