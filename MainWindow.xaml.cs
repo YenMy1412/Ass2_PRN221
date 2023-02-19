@@ -28,6 +28,7 @@ namespace Assignment2_Group4_SE1610
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
         private void cartTitle_Click(object sender, RoutedEventArgs e)
@@ -35,6 +36,7 @@ namespace Assignment2_Group4_SE1610
             //cartWindow
             CartWindow cart = new CartWindow();
             cart.Show();
+
         }
 
         private void loginMBtn_Click(object sender, RoutedEventArgs e)
