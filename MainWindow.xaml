@@ -22,7 +22,7 @@
 
                     </MenuItem>
                 </Menu>
-                <Image Height="369" Width="788" />
+                <Image Height="369" Width="788" Source=" Images/mainImage.png" />
             </DockPanel>
             <Label Content="SE1610- GROUP 4"/>
         </StackPanel>
