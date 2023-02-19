@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -98,6 +99,22 @@ namespace Assignment2_Group4_SE1610.View
         private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void txtCash_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            String cash = txtCash.Text;
+            String strpattern = "^[0-9]";
+            Regex regex = new Regex(strpattern);
+            if (regex.Match(txtCash.Text).Success)
+            {
+                txtRemain.Text = (decimal.Parse(txtCash.Text.ToString()) - shopping.GetTotal()).ToString();
+            }
+            else
+            {
+                MessageBox.Show("Must Input Decimal Number!");
+                txtCash.Text = 0.ToString();
+            }
         }
     }
 }

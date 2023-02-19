@@ -40,8 +40,8 @@
                         <StackPanel HorizontalAlignment="Center">
                             <Label  FontWeight="Bold" Name="lbTotal" Content="Total:"/>
                             <TextBox Name="txtTotal"  Width="100"/>
-                            <Label  FontWeight="Bold" Name="lbCash" Content="Cash:"/>
-                            <TextBox Name="txtCash"  Width="100"/>
+                            <Label  FontWeight="Bold" Name="lbCash" Content="Cash:"  />
+                            <TextBox Name="txtCash"  Width="100" TextChanged="txtCash_TextChanged"/>
                             <Label  FontWeight="Bold" Name="lbRemain" Content="Remain:"/>
                             <TextBox Name="txtRemain"  Width="100"/>
                         </StackPanel>
